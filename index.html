@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>批量打开网址</title>
+    <script>
+        window.onload = function () {
+            var objta = document.getElementById("ta");
+            var objOpen = document.getElementById("openbtn");
+
+            objOpen.addEventListener('click', function () {
+                var urls = objta.value.split("\n")
+
+                for (var i = 0; i < urls.length; i++) {
+                    window.open(urls[i]);
+                }
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <textarea id="ta" style="width: 500px;height: 500px;">
+http://acfun.cn
+http://bilibili.com
+</textarea>
+    <button id="openbtn">打开</button>
+</body>
+
+</html>
