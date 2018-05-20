@@ -17,8 +17,11 @@
                 var urls = objta.value.split("\n")
 
                 for (var url of urls) {
-                    window.open(url);
-                    // console.log(url);
+                    //判断当前行是否是一段网址
+                    if (/^((https|http|ftp)?:\/\/)[\S]+/.test(url)) {
+                        window.open(url);
+                    }
+                    // console.log(/^((https|http)?:\/\/)[\S]+/.test(url));
                 }
             })
         }
