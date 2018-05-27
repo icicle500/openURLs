@@ -6,26 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>批量打开网址</title>
-    <script>
-        window.onload = function () {
-            var objta = document.getElementById("ta");
-            var objOpen = document.getElementById("openbtn");
-
-            objta.innerHTML = 'http://acfun.cn\nhttp://bilibili.com'
-
-            objOpen.addEventListener('click', function () {
-                var urls = objta.value.split("\n")
-
-                for (var url of urls) {
-                    //判断当前行是否是一段网址
-                    if (/^((https|http|ftp)?:\/\/)[\S]+/.test(url)) {
-                        window.open(url);
-                    }
-                    // console.log(/^((https|http)?:\/\/)[\S]+/.test(url));
-                }
-            })
-        }
-    </script>
+    <script src="./index.js"></script>
 </head>
 
 <body>
