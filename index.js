@@ -12,7 +12,7 @@ window.onload = function () {
             if (/^((https|http|ftp)?:\/\/)[\S]+/.test(url)) {
                 window.open(url);
                 // console.log('http prefix')
-            } else if (/.+\..+\w$/.test(url)) {
+            } else if (/\S+\.\S+$/.test(url)) {
                 window.open(`http://${url}`)
                 // console.log('no http prefix')
             } else {
