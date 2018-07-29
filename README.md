@@ -1,5 +1,8 @@
 # 批量打开网址
+演示地址：[批量打开网址](https://icicle500.github.io/openURLs)
+
 查看版本说明：[version.md](https://github.com/icicle500/openURLs/blob/master/version.md)
+
 ## 简介
 顾名思义，这就是一个批量打开网址的小工具。在输入框中输入网址，点击打开，就可以打开所有的网址。
 
