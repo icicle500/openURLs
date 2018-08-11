@@ -20,4 +20,8 @@ window.onload = function () {
             }
         }
     })
+
+    objta.addEventListener('focus',function(){
+        this.select();
+    })
 }
